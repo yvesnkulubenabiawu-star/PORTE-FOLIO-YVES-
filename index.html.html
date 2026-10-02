@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Yves Nkulu Benabiawu — Développeur de bases de données</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Serif:wght@600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#F4F6F9;--card:#FFFFFF;--ink:#14213A;--mute:#55627A;--line:#D9DFE8;--navy:#1F3A63;--accent:#B7791F;--code:#0F1B2D;--codeink:#DCE6F5;--codekey:#F2B84B;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0D1524;--card:#141F33;--ink:#E8EEF8;--mute:#9AA8C0;--line:#26344D;--navy:#8DB2EA;--accent:#F2B84B;--code:#08101D}}
+:root[data-theme="dark"]{--bg:#0D1524;--card:#141F33;--ink:#E8EEF8;--mute:#9AA8C0;--line:#26344D;--navy:#8DB2EA;--accent:#F2B84B;--code:#08101D}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 16px/1.65 "IBM Plex Sans",system-ui,-apple-system,"Segoe UI",sans-serif}
+a{color:var(--navy)}
+a:focus-visible,button:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+.wrap{max-width:960px;margin:0 auto;padding:0 22px}
+nav{position:sticky;top:env(safe-area-inset-top,0px);background:var(--bg);border-bottom:1px solid var(--line);z-index:5}
+nav .wrap{display:flex;gap:6px 22px;align-items:center;flex-wrap:wrap;padding-top:12px;padding-bottom:12px}
+nav b{font-family:"IBM Plex Serif",Georgia,serif;font-weight:600;margin-right:auto}
+nav a{text-decoration:none;color:var(--mute);font-size:14px}
+nav a:hover{color:var(--ink)}
+.hero{padding:64px 0 48px}
+h1{font:600 clamp(34px,6vw,58px)/1.08 "IBM Plex Serif",Georgia,serif;margin:0 0 14px;letter-spacing:-.01em}
+.lead{max-width:60ch;color:var(--mute);font-size:18px;margin:0 0 28px}
+.code{background:var(--code);color:var(--codeink);border-radius:8px;padding:20px 22px;font:400 14px/1.7 "IBM Plex Mono",ui-monospace,Menlo,Consolas,monospace;overflow-x:auto}
+.code .k{color:var(--codekey)}
+.res{margin-top:14px;border-top:1px solid #2a3a57;padding-top:12px;display:grid;grid-template-columns:max-content 1fr;gap:2px 18px}
+.res span:nth-child(odd){color:#8FA3C4}
+.cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:26px}
+.btn{display:inline-block;padding:11px 20px;border-radius:6px;background:var(--navy);color:var(--bg);text-decoration:none;font-weight:600;border:2px solid var(--navy);cursor:pointer;font-family:inherit;font-size:15px}
+.btn.alt{background:transparent;color:var(--navy)}
+section{padding:44px 0;border-top:1px solid var(--line)}
+h2{font:600 26px/1.2 "IBM Plex Serif",Georgia,serif;margin:0 0 22px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
+.box{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:18px 20px}
+.box h3{margin:0 0 8px;font-size:16px}
+.box ul{margin:0;padding-left:18px;color:var(--mute)}
+.job{display:grid;grid-template-columns:130px 1fr;gap:6px 24px;padding:0 0 26px;margin-bottom:26px;border-bottom:1px solid var(--line)}
+.job:last-child{border:0;margin:0;padding:0}
+.when{color:var(--accent);font:500 14px/1.7 "IBM Plex Mono",ui-monospace,Menlo,monospace}
+.job h3{margin:0}
+.org{color:var(--mute);margin:0 0 8px}
+.job ul{margin:0;padding-left:18px}
+.job li{margin-bottom:4px}
+.certs{list-style:none;margin:0;padding:0}
+.certs li{display:flex;justify-content:space-between;gap:16px;padding:9px 0;border-bottom:1px solid var(--line)}
+.certs time{color:var(--mute);font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:14px;white-space:nowrap}
+footer{padding:30px 0 50px;color:var(--mute);font-size:14px;border-top:1px solid var(--line)}
+@media (max-width:620px){.job{grid-template-columns:1fr}.res{grid-template-columns:1fr}}
+@media print{nav,.cta,.noprint{display:none}body{background:#fff;color:#000}.box,.code{border:1px solid #bbb;background:#fff;color:#000}.res span{color:#000!important}section{padding:20px 0;break-inside:avoid}}
+</style>
+</head>
+<body>
+<nav><div class="wrap"><b>Y. Nkulu Benabiawu</b><a href="#profil">Profil</a><a href="#competences">Compétences</a><a href="#experience">Expérience</a><a href="#formation">Formation</a><a href="#contact">Contact</a></div></nav>
+
+<main class="wrap">
+<header class="hero">
+<h1>Nkulu Benabiawu Yves</h1>
+<p class="lead">Développeur de bases de données SQL Server. Je conçois des structures de données fiables et j’écris des requêtes T-SQL performantes et sécurisées.</p>
+<div class="code" role="img" aria-label="Requête SQL présentant le candidat">
+<div><span class="k">SELECT</span> nom, specialite, ville, statut</div>
+<div><span class="k">FROM</span>&nbsp;&nbsp; candidats</div>
+<div><span class="k">WHERE</span>&nbsp; id = <span class="k">'yves'</span>;</div>
+<div class="res">
+<span>nom</span><span>Nkulu Benabiawu Yves</span>
+<span>specialite</span><span>Bases de données Microsoft SQL Server, T-SQL</span>
+<span>ville</span><span>Kinshasa, R.D. Congo</span>
+<span>statut</span><span>Ouvert aux opportunités de développement</span>
+</div>
+</div>
+<div class="cta">
+<a class="btn" href="mailto:yvesnkulubenabiawu@gmail.com">M’écrire un e-mail</a>
+<a class="btn alt" href="https://wa.me/243853854108">WhatsApp</a>
+<button class="btn alt noprint" onclick="window.print()">Télécharger le CV en PDF</button>
+</div>
+</header>
+
+<section id="profil">
+<h2>Profil</h2>
+<p style="max-width:70ch;margin:0">Informaticien de gestion (Licence, ISP Kinshasa), en cours de spécialisation en développement logiciel. Qualifié en administration de bases de données Microsoft SQL Server et en assistance administrative. J’apporte de la rigueur dans la gestion de dossiers complexes, la sécurisation des données et la maintenance des outils informatiques. Je cherche une structure où la fiabilité des systèmes et l’exactitude des informations comptent vraiment.</p>
+</section>
+
+<section id="competences">
+<h2>Compétences</h2>
+<div class="grid">
+<div class="box"><h3>Bases de données</h3><ul><li>Microsoft SQL Server : administration</li><li>SQL et T-SQL : requêtes, vues, index</li><li>Procédures stockées et fonctions</li><li>Modélisation MCD/MLD</li><li>Sauvegardes et restaurations</li><li>Intégrité et qualité des données</li></ul></div>
+<div class="box"><h3>Développement</h3><ul><li>Programmation web</li><li>Création de formulaires et collecte de données</li><li>Analyse de données et reporting</li><li>Google Analytics</li></ul></div>
+<div class="box"><h3>Systèmes et support</h3><ul><li>Résolution d’incidents</li><li>Maintenance du parc informatique</li><li>Administration systèmes et réseaux</li><li>Word, Excel, PowerPoint</li></ul></div>
+</div>
+</section>
+
+<section id="experience">
+<h2>Expérience professionnelle</h2>
+<div class="job"><div class="when">2025 – 2026</div><div>
+<h3>Développeur de bases de données</h3><p class="org">Freelance, Kinshasa</p>
+<ul><li>Conception et modélisation de bases relationnelles (MCD/MLD) adaptées aux besoins des projets.</li><li>Création des objets SQL Server : tables, vues, index, procédures stockées et fonctions.</li><li>Écriture et optimisation de requêtes T-SQL complexes pour la performance, l’intégrité et la sécurité des données.</li></ul></div></div>
+<div class="job"><div class="when">2025</div><div>
+<h3>Chargé d’assistance consulaire</h3><p class="org">Seven Travel, Kinshasa</p>
+<ul><li>Accompagnement des clients dans leurs démarches de visa et de titre de séjour.</li><li>Constitution, vérification et suivi des dossiers jusqu’à la décision consulaire.</li><li>Tenue du fichier clients : saisie, contrôle de cohérence, suivi des échéances.</li></ul></div></div>
+<div class="job"><div class="when">2021 – 2022</div><div>
+<h3>Support informatique</h3><p class="org">Travel in Peace, Kinshasa</p>
+<ul><li>Continuité du système informatique pour les agents de voyage.</li><li>Diagnostic et résolution des incidents matériels et logiciels.</li><li>Maintenance du parc et du réseau de l’agence, sauvegarde des données.</li></ul></div></div>
+<div class="job"><div class="when">2018 – 2021</div><div>
+<h3>Comptable et caissier</h3><p class="org">Shop Tonny, Kinshasa</p>
+<ul><li>Gestion des encaissements, des ventes et du suivi financier quotidien.</li><li>Comptabilité courante et rapports de caisse.</li></ul></div></div>
+</section>
+
+<section id="formation">
+<h2>Formation et certifications</h2>
+<div class="grid" style="margin-bottom:26px">
+<div class="box"><h3>Licence en informatique de gestion</h3><div style="color:var(--mute)">Institut Supérieur Pédagogique, Kinshasa<br>2023 – 2025</div></div>
+<div class="box"><h3>Graduat en informatique de gestion</h3><div style="color:var(--mute)">Institut Supérieur Pédagogique, Kinshasa<br>2020 – 2023</div></div>
+<div class="box"><h3>Diplôme d’État, Biologie-Chimie</h3><div style="color:var(--mute)">Lycée Madame de Sévigné, Kinshasa<br>2013 – 2019</div></div>
+</div>
+<ul class="certs">
+<li><span>Développement de logiciel, INPP</span><time>en cours</time></li>
+<li><span>Administration de bases de données, INPP</span><time>2026</time></li>
+<li><span>Création de formulaires et collecte de données, HOPE</span><time>2026</time></li>
+<li><span>Assistant administratif, ITM</span><time>2026</time></li>
+<li><span>Programmation web, KADEA Academy</span><time>2025</time></li>
+<li><span>Bases de données, CURSA</span><time>2025</time></li>
+<li><span>Réseaux informatiques, UDS Community</span><time>2025</time></li>
+<li><span>Google Analytics, Ateliers Numériques Google</span><time>2025</time></li>
+</ul>
+</section>
+
+<section id="contact">
+<h2>Contact</h2>
+<div class="grid">
+<div class="box"><h3>E-mail</h3><a href="mailto:yvesnkulubenabiawu@gmail.com">yvesnkulubenabiawu@gmail.com</a></div>
+<div class="box"><h3>Téléphone</h3><a href="tel:+243853854108">+243 853 854 108</a></div>
+<div class="box"><h3>Adresse</h3>27, avenue Géomètre, Limete<br>Kinshasa, R.D. Congo</div>
+<div class="box"><h3>Langues</h3>Français (courant), Lingala (courant), Anglais (bases, en progression)</div>
+</div>
+</section>
+</main>
+<footer><div class="wrap">© 2026 Nkulu Benabiawu Yves</div></footer>
+</body>
+</html>
